@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00525252">
+    android:background="#00530302">
 
     <GridLayout
         android:layout_width="wrap_content"
@@ -16,124 +16,173 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Line 1 -->
         <Button
-            android:id="@+id/newItem"
+            android:id="@+id/totalButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_row="0"
             android:layout_column="0"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/new_button" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/total_button" />
 
         <Button
-            android:id="@+id/cancleItem"
+            android:id="@+id/newButton"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
             android:layout_row="0"
             android:layout_column="1"
-            android:background="@drawable/cancel_button" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/new_button" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="전체보기"
+            android:textSize="14sp"
+            android:layout_row="1"
+            android:layout_column="0"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="신규주문"
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:layout_row="1"
-            android:layout_column="0"/>
+            android:layout_column="1"/>
+
+
+        <!-- Line 2 -->
+
+        <Button
+            android:id="@+id/cancleButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/cancel_button" />
+
+        <Button
+            android:id="@+id/exchangeButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/exchange_button" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="주문취소요청"
-            android:textSize="20sp"
-            android:layout_row="1"
-            android:layout_column="1"/>
-
-        <Button
-            android:id="@+id/exchangeItem"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="0"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/exchange_button" />
-
-        <Button
-            android:id="@+id/returnItem"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/return_button" />
-
+            android:textSize="14sp"
+            android:layout_row="3"
+            android:layout_column="0"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="교환요청"
-            android:textSize="20sp"
+            android:textSize="14sp"
             android:layout_row="3"
-            android:layout_column="0"/>
+            android:layout_column="1"/>
+
+        <!-- Line 3 -->
+
+
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/return_button" />
+
+        <Button
+            android:id="@+id/helpButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/help_button"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="반품요청"
-            android:textSize="20sp"
-            android:layout_row="3"
-            android:layout_column="1"/>
-
-
-        <Button
-            android:id="@+id/helpItem"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:textSize="14sp"
             android:layout_row="5"
-            android:layout_column="0"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/help_button"/>
-
-
-        <Button
-            android:id="@+id/stockItem"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_row="5"
-            android:layout_column="1"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:background="@drawable/stock_button"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="문의요청"
-            android:textSize="20sp"
-            android:layout_row="6"
             android:layout_column="0"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="재고관리"
-            android:textSize="20sp"
-            android:layout_row="6"
+            android:text="문의요청"
+            android:textSize="14sp"
+            android:layout_row="5"
             android:layout_column="1"/>
+
+        <!-- Line 4 -->
+
+
+        <Button
+            android:id="@+id/stockButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/stock_button"/>
+
+        <Button
+            android:id="@+id/shoppingButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/shopping_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="재고관리"
+            android:textSize="14sp"
+            android:layout_row="7"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="쇼핑몰리스트"
+            android:textSize="14sp"
+            android:layout_row="7"
+            android:layout_column="1"/>
+
+        <!-- Line 5 -->
 
 
 
