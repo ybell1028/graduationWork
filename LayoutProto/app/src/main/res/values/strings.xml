@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LayoutProto</string>
+    <string name="line">--------------------------------------------------------------------------------------------------</string>
 </resources>
