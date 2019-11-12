@@ -1,6 +1,5 @@
 package org.techtown.layoutproto;
 
-import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,7 +32,7 @@ public class Menu1Fragment extends Fragment {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.frame_layout, shoppingFragment.newInstance()).commitAllowingStateLoss();
+                fragmentTransaction.replace(R.id.frame_layout, ShoppingFragment.newInstance()).commitAllowingStateLoss();
             }
         });
 
