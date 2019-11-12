@@ -177,7 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="쇼핑몰리스트"
+            android:text="쇼핑몰관리"
             android:textSize="14sp"
             android:layout_row="7"
             android:layout_column="1"/>
