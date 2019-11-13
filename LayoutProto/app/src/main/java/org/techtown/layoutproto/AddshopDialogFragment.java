@@ -39,7 +39,7 @@ public class AddshopDialogFragment extends DialogFragment implements View.OnClic
         //malllist.xml(item)과 str을 인자로 어댑터 생성
         adapter = new ArrayAdapter<String>(getContext(), R.layout.spinner_item, str);
 
-        adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.spi);
         spinner.setAdapter(adapter);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

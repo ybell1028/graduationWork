@@ -9,12 +9,12 @@
     <item
         android:id="@+id/navigation_menu2"
         android:icon="@drawable/ic_special"
-        android:title="분석" />
+        android:title="셀러닝" />
 
     <item
         android:id="@+id/navigation_menu3"
-        android:icon="@drawable/ic_alarm"
-        android:title="알람" />
+        android:icon="@drawable/ic_new"
+        android:title="NEW" />
 
     <item
         android:id="@+id/navigation_menu4"

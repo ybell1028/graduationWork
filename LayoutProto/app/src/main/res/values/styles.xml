@@ -8,7 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlHighlight">#00CC55</item>
         <item name="colorControlNormal">#FF0000</item>
+    </style>
 
+    <style name="spinner_style">
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:popupBackground">@drawable/spinner_background</item>
+        <item name="android:dropDownSelector">#A9A9A9</item>
     </style>
 
 </resources>

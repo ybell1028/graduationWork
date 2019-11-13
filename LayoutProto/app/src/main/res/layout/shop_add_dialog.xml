@@ -39,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown"
-            android:background="@drawable/spinner_background"
+            android:background="@drawable/spinner_head_background"
             android:paddingHorizontal="10dp"
             android:layout_marginTop="10dp"/>
 

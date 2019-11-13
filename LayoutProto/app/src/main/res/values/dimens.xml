@@ -5,4 +5,6 @@
     <dimen name="shop_dialog_width">400dp</dimen>
     <dimen name="shop_dialog_height">550dp</dimen>
 
+    <dimen name="spinner_head_height">40dp</dimen>
+
 </resources>
