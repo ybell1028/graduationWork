@@ -16,6 +16,7 @@ import android.widget.Button;
 public class Menu1Fragment extends Fragment {
 
     Button shoppingButton;
+    Button totButton;
 
     @Nullable
     @Override
@@ -34,6 +35,16 @@ public class Menu1Fragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.frame_layout, shoppingFragment.newInstance()).commitAllowingStateLoss();
+            }
+        });
+
+        totButton = (Button)view.findViewById(R.id.totalButton);
+        totButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frame_layout, item_status.newInstance()).commitAllowingStateLoss();
             }
         });
 
