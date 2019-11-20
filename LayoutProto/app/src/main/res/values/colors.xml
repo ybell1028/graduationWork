@@ -3,7 +3,4 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="naver_color">#00C63B</color>
-    <color name="street_color">#DA2431</color>
-    <color name="auction_color">#EA1D22</color>
 </resources>

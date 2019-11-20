@@ -1,6 +1,5 @@
 package org.techtown.layoutproto;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -9,25 +8,28 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link shoppingFragment.OnFragmentInteractionListener} interface
+ * {@link ShoppingFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link shoppingFragment#newInstance} factory method to
+ * Use the {@link ShoppingFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class shoppingFragment extends Fragment {
+public class ShoppingFragment extends Fragment implements View.OnClickListener{
 
-    public shoppingFragment() {
+    Button addButton;
+
+    public ShoppingFragment() {
         // Required empty public constructor
     }
 
 
-    public static shoppingFragment newInstance() {
-        shoppingFragment fragment = new shoppingFragment();
+    public static ShoppingFragment newInstance() {
+        ShoppingFragment fragment = new ShoppingFragment();
         return fragment;
     }
 
@@ -37,7 +39,22 @@ public class shoppingFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_shopping, container, false);
+
+        addButton = view.findViewById(R.id.addButton);
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AddshopDialogFragment dialog = new AddshopDialogFragment();
+                dialog.show(getActivity().getSupportFragmentManager(), "tag");
+            }
+        });
+
         return view;
+    }
+
+    @Override
+    public void onClick(View view) {
+
     }
 
     public interface OnFragmentInteractionListener {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mallList">
+        <item>쇼핑몰을 선택해주세요.</item>
+        <item>옥션</item>
+        <item>지마켓</item>
+        <item>11번가</item>
+        <item>인터파크</item>
+        <item>네이버 스토어팜</item>
+
+    </string-array>
+
+
+</resources>
