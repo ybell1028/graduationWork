@@ -25,7 +25,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="15dp">
+        android:layout_marginHorizontal="10dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -35,33 +35,40 @@
             android:textColor="#000000"  />
 
         <Spinner
-            android:id="@+id/shopSpinner"
+            android:id="@+id/mallSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:spinnerMode="dropdown"
             android:background="@drawable/spinner_head_background"
             android:paddingHorizontal="10dp"
-            android:layout_marginTop="10dp"/>
+            android:autofillHints="dd"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="아이디"
             android:textSize="16sp"
-            android:textColor="#000000"  />
+            android:textColor="#000000"/>
 
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
             android:ems="10"
+            android:textSize="20sp"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:background="@drawable/spinner_head_background"
+            android:hint="아이디를 입력해주세요."/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="비밀번호"
             android:textSize="16sp"
             android:textColor="#000000"  />
@@ -70,24 +77,29 @@
             android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="10dp"
             android:ems="10"
-            android:inputType="textPassword" />
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:background="@drawable/spinner_head_background"
+            android:hint="비밀번호를 입력해주세요."/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="사용여부"
             android:textSize="16sp"
             android:textColor="#000000"/>
 
         <Spinner
-            android:id="@+id/activateShop"
+            android:id="@+id/syncSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown"
-            android:background="@drawable/spinner_background"
-            android:paddingHorizontal="10dp"
-            android:layout_marginTop="10dp"/>
+            android:background="@drawable/spinner_head_background"
+            android:paddingHorizontal="10dp" />
 
     </LinearLayout>
 
