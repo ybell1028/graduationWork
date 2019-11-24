@@ -8,7 +8,7 @@
     <!-- 여기에 있는 요소들은 쇼핑몰 추가시 입력한 데이터대로 동적으로 바뀌어야함 -->
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/exampleshopIcon"
+        android:id="@+id/shopIcon"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
@@ -33,6 +33,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
+            android:id="@+id/shopName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -52,6 +53,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
+            android:id="@+id/shopId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -71,6 +73,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
+            android:id="@+id/shopSync"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"

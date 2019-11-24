@@ -8,17 +8,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link ShoppingFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link ShoppingFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ShoppingFragment extends Fragment implements View.OnClickListener{
 
     Button addButton;
@@ -60,5 +55,47 @@ public class ShoppingFragment extends Fragment implements View.OnClickListener{
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    public class ShopAdapter extends BaseAdapter{
+
+        ArrayList<ShopItem> items = new ArrayList<ShopItem>();
+
+        public void addItem(ShopItem item){
+            items.add(item);
+        }
+
+        @Override
+        public int getCount() {
+            return items.size();
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return items.get(position);
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            ShopItemView siv = null;
+            if(convertView == null){
+                siv = new ShopItemView(getContext());
+            }
+            else{
+                siv = (ShopItemView)convertView;
+            }
+            ShopItem item = items.get(position);
+            siv.setShopIcon(item.getResId());
+            siv.setShopName(item.getShopName());
+            siv.setShopId(item.getShopId());
+            siv.setShopSync(item.getShopSync());
+
+            return siv;
+        }
     }
 }
