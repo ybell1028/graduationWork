@@ -10,11 +10,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class ShoppingFragment extends Fragment implements View.OnClickListener{
+
+    ShopAdapter adapter;
 
     Button addButton;
 
@@ -34,6 +36,18 @@ public class ShoppingFragment extends Fragment implements View.OnClickListener{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_shopping, container, false);
+
+        ListView shopListView = view.findViewById(R.id.shopListView);
+
+        adapter = new ShopAdapter();
+        adapter.addItem(new ShopItem(R.drawable.logo_auction, "옥션", "ybell1028", true));
+        adapter.addItem(new ShopItem(R.drawable.logo_gmarket, "G마켓", "ybell1028", true));
+        adapter.addItem(new ShopItem(R.drawable.logo_interpark, "인터파크", "ybell95", false));
+        adapter.addItem(new ShopItem(R.drawable.logo_coupang, "쿠팡", "ybell95", false));
+        adapter.addItem(new ShopItem(R.drawable.logo_naver, "네이버", "ybell95", true));
+
+
+        shopListView.setAdapter(adapter);
 
         addButton = view.findViewById(R.id.addButton);
         addButton.setOnClickListener(new View.OnClickListener() {

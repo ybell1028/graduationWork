@@ -60,14 +60,61 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/border1" />
 
-    <ListView
-        android:id="@+id/shopList"
-        android:layout_width="300dp"
+    <LinearLayout
+        android:id="@+id/shopAttributes"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/shopListView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/border1" />
+        app:layout_constraintTop_toBottomOf="@id/addButton">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="쇼핑몰"
+            android:gravity="center"
+            android:layout_weight="2.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연동현황"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     "
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shopListView"
+        android:layout_width="360dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="10dp"
+        android:divider="#BDBDBD"
+        android:dividerHeight="2dp"
+        android:paddingVertical="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shopAttributes" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
